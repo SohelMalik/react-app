@@ -13,7 +13,7 @@ const calcaulateBMI = (obj) => {
     const bmi = weight / height ** 2;
     setTimeout(() => {
         console.log(bmi);
-    }, 1000);
+    }, 2000);
 
 
     
