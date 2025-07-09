@@ -1,4 +1,13 @@
-console.log("YOUR BMI:");
+//"1.internal module::node", "2.user/developer defined module", "3.external modul::express""
+
+console.log("- 1.A -");
+
+const bmi = require("./bmi_helper.js")
+console.log("- 1.B -");
+
+const {division} =require("./maths_helper.js")
+console.log("- 1.C -");
+
 const student ={
     name: "Sohel",
     age: 22,
@@ -7,16 +16,9 @@ const student ={
     country: "Bangladesh"
 };
 
-const calcaulateBMI = (obj) => {
-    const { weight, height } = obj;
-     
-    const bmi = weight / height ** 2;
-    setTimeout(() => {
-        console.log(bmi);
-    }, 2000);
+bmi(student);
 
+console.log(division(33, 11));
 
-    
-}
-calcaulateBMI(student);
-
+// whenevr u require (resolution /execution is done synchronous)
+// 1.A -->2.A -->3.A-->3.B-->2.B-->2.C--1.B-->(CACHING)-->1.C
