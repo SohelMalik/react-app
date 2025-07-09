@@ -16,7 +16,7 @@ const student ={
     country: "Bangladesh"
 };
 
-bmi(student);
+bmi(student)
 
 console.log(division(33, 11));
 

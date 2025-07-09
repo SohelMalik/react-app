@@ -18,6 +18,6 @@ const calculateBMI = (obj) => {
 };
 
 module.exports = calculateBMI;
-console.log("- 2.C -");
+console.log("- 2.C -")
 
 

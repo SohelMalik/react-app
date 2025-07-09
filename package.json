@@ -2,8 +2,7 @@
   "name": "day9-day10-mini-project",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
+"scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
